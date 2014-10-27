@@ -13,14 +13,14 @@
 
 - (void)didLoadFromCCB
 {
-    self.position = ccp(15, 25);
+    self.position = ccp(115, 250);
     self.zOrder = DrawingOrderHero;
     self.physicsBody.collisionType = @"character";
 }
 
 - (void)flap
 {
-    [self.physicsBody applyImpulse:ccp(0, 400.f)];
+    [self.physicsBody applyImpulse:ccp(0, 200.f)];
 }
 
 @end
